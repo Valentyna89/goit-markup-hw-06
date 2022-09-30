@@ -899,9 +899,7 @@ a {
 }
 
 .input-checkbox {
-  width: 16px;
-  height: 15px;
-  margin-right: 8px;
+   appearance: none;
 }
 
 .form-input {
@@ -974,8 +972,31 @@ a {
   cursor: pointer;
 }
 
-.policy {
-  margin-bottom: 0;
+.form-check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+} 
+.check-icon {
+  fill: var(--primary-white-color);
+}
+
+.form-check-icon {
+  width: 16px;
+  height: 15px;
+  display: block;
+  border: 2px solid var(--title-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}  
+.input-checkbox:checked+.form-check-text .form-check-icon {
+  background-color: var(--accent-color);
+  border: none;
 }
 
 .btn-submit {
