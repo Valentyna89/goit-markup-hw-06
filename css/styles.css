@@ -980,9 +980,6 @@ a {
   display: flex;
   align-items: center;
 } 
-.check-icon {
-  fill: var(--primary-white-color);
-}
 
 .form-check-icon {
   width: 16px;
@@ -993,10 +990,12 @@ a {
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }  
 .input-checkbox:checked+.form-check-text .form-check-icon {
   background-color: var(--accent-color);
   border: none;
+ 
 }
 
 .btn-submit {
